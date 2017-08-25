@@ -242,32 +242,52 @@
             <table class="filtered-data__table">
                 <thead>
                     <tr>
+                        <th class="filtered-data__number">Nr.</th>
                         <th class="filtered-data__time">10 Uhr</th>
-                        <th class="filtered-data__route">Strecke A/C/I</th>
-                        <th class="filtered-data__return">Outbound Return</th>
-                        <th class="filtered-data__hotel">Hotel</th>
-                        <th class="filtered-data__bcs">BCS PW</th>
+                        <th class="filtered-data__route">Strecke</th>
+                        <th class="filtered-data__return">Outbound / Inbound</th>
+                        <th class="filtered-data__hotel">Hotel &amp; Other Services</th>
+                        <th class="filtered-data__bcs">BCS</th>
                         <th class="filtered-data__diff">Diff</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="filtered-data__row">
+                        <td class="filtered-data__number">
+                            1
+                        </td>
                         <td class="filtered-data__time">
                             <div class="filtered-data__paragraph">
-                                <p>Nr.: 1</p>
-                                <p>44762741</p>
+                                44762741
                             </div>
                             <div class="filtered-data__paragraph">
                                 28.07 10:04
+                                <span class="data__separator">|</span>
+                                <span class="data__deviation_big">40s</span>
                             </div>
                             <div class="filtered-data__paragraph">
-                                <a href="/" class="link link_uppercase">Calc check</a>
+                                <ul class="filtered-data__params">
+                                    <li class="filtered-data__param">
+                                        <span class="filtered-data__key">PlayerBrand</span>
+                                        <span class="filtered-data__value">ABH</span>
+                                    </li>
+                                    <li class="filtered-data__param">
+                                        <span class="filtered-data__key">Brand</span>
+                                        <span class="filtered-data__value">ABHTrue</span>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="filtered-data__paragraph">
                                 <a href="/" class="link link_uppercase">Open</a>
                             </div>
                             <div class="filtered-data__paragraph">
-                                <a href="/" class="link link_uppercase">VIEW DETAILS</a>
+                                <a href="/" class="link link_uppercase">Calc</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Trace</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">More details</a>
                             </div>
                         </td>
                         <td class="filtered-data__route">
@@ -275,33 +295,486 @@
                                 HAM/JFK
                             </div>
                             <div class="filtered-data__paragraph">
+                                <p>02.09.2017 12:35</p>
+                                <p>09.09.2017 16:30</p>
+                            </div>
+                            <div class="filtered-data__paragraph">
                                 2/0/0
+                            </div>
+                        </td>
+                        <td class="filtered-data__return">
+                            <table class="details">
+                                <tr class="detail detail_fact data__deviation_small">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-small">SoftConnEx</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>TravelPort</td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">O</td>
+                                    <td colspan="2">205.69 EUR (38.49 EUR <span class="data__separator">|</span> 18.71%)</td>
+                                </tr>
+                                <tr class="detail detail_fact data__deviation_big">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-big">Airbis</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">E</td>
+                                    <td colspan="2">205.69 EUR (81.51 EUR <span class="data__separator">|</span> 39.62%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">ABH</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>TravelPort</td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">O</td>
+                                    <td colspan="2">205.69 EUR (38.49 EUR <span class="data__separator">|</span> 18.71%)</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="filtered-data__hotel">
+                            <table class="details">
+                                <tr class="detail detail_fact data__deviation_small">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-small">HTB</div>
+                                    </td>
+                                    <td>PMI04M DB F</td>
+                                    <td class="data__price">2202.56 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td colspan="2">Hilton Sa Torre inkl. Mietwagen</td>
+                                    <td>2202.58 EUR (0.02 EUR <span class="data__separator">|</span> 0%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">Store</div>
+                                    </td>
+                                    <td>Handling</td>
+                                    <td class="data__price">20.00 EUR</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">ICMP</div>
+                                    </td>
+                                    <td>Bus Transfer</td>
+                                    <td class="data__price">&mdash;</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="filtered-data__bcs">
+                            <table class="details">
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        EK
+                                    </td>
+                                    <td class="data__price data__deviation_big">2.493,94 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>Player</td>
+                                    <td>2613.96 EUR (120.02 EUR <span class="data__separator">|</span> 4.59%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        VK
+                                    </td>
+                                    <td class="data__price data__deviation_small">3.004,00 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>Preset</td>
+                                    <td>3002.92 EUR >> 1.08 EUR <span class="data__separator">|</span> 0.04%</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        Marge
+                                    </td>
+                                    <td class="data__price">510.06 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>17%</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        Rule
+                                    </td>
+                                    <td>Beach PMI Top Hotel Sommer</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>Beach PMI Top Hotel Sommer</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="filtered-data__diff">
+                            <p class="filtered-data__info-price">238.5 EUR</p>
+                        </td>
+                    </tr>
+                    <tr class="filtered-data__row">
+                        <td class="filtered-data__number">
+                            2
+                        </td>
+                        <td class="filtered-data__time">
+                            <div class="filtered-data__paragraph">
+                                44762741
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                28.07 10:04
+                                <span class="data__separator">|</span>
+                                <span class="data__deviation_big">40s</span>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <ul class="filtered-data__params">
+                                    <li class="filtered-data__param">
+                                        <span class="filtered-data__key">PlayerBrand</span>
+                                        <span class="filtered-data__value">ABH</span>
+                                    </li>
+                                    <li class="filtered-data__param">
+                                        <span class="filtered-data__key">Brand</span>
+                                        <span class="filtered-data__value">ABHTrue</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Open</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Calc</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Trace</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">More details</a>
+                            </div>
+                        </td>
+                        <td class="filtered-data__route">
+                            <div class="filtered-data__paragraph">
+                                HAM/JFK
                             </div>
                             <div class="filtered-data__paragraph">
                                 <p>02.09.2017 12:35</p>
                                 <p>09.09.2017 16:30</p>
                             </div>
+                            <div class="filtered-data__paragraph">
+                                2/0/0
+                            </div>
                         </td>
                         <td class="filtered-data__return">
-                            <p class="filtered-data__info">N->L - TravelPort 678.32 EUR (Player:
-                                1136.66 EUR >> 458.34 EUR | 40.32%)
-                                LKWTO0DE</p>
-                            <p class="filtered-data__info-at">R - TravelPort 678.3 EUR (Player:
-                                0.00 EUR >> 678.3 EUR | 0%) LKWTO0DE</p>
+                            <table class="details">
+                                <tr class="detail detail_fact data__deviation_small">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-small">SoftConnEx</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>TravelPort</td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">O</td>
+                                    <td colspan="2">205.69 EUR (38.49 EUR <span class="data__separator">|</span> 18.71%)</td>
+                                </tr>
+                                <tr class="detail detail_fact data__deviation_big">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-big">Airbis</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">E</td>
+                                    <td colspan="2">205.69 EUR (81.51 EUR <span class="data__separator">|</span> 39.62%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">ABH</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>TravelPort</td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">O</td>
+                                    <td colspan="2">205.69 EUR (38.49 EUR <span class="data__separator">|</span> 18.71%)</td>
+                                </tr>
+                            </table>
                         </td>
                         <td class="filtered-data__hotel">
-                            <p class="filtered-data__info">GTA_NYC_911 DB-1 B
-                                1481 EUR (Player: 1482.15 EUR >>
-                                1.15 EUR | 0.08%)
-                                Handling EK: --
-                                Transfer EK: --</p>
+                            <table class="details">
+                                <tr class="detail detail_fact data__deviation_small">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-small">HTB</div>
+                                    </td>
+                                    <td>PMI04M DB F</td>
+                                    <td class="data__price">2202.56 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td colspan="2">Hilton Sa Torre inkl. Mietwagen</td>
+                                    <td>2202.58 EUR (0.02 EUR <span class="data__separator">|</span> 0%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">Store</div>
+                                    </td>
+                                    <td>Handling</td>
+                                    <td class="data__price">20.00 EUR</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">ICMP</div>
+                                    </td>
+                                    <td>Bus Transfer</td>
+                                    <td class="data__price">&mdash;</td>
+                                </tr>
+                            </table>
                         </td>
                         <td class="filtered-data__bcs">
-                            <p class="filtered-data__info-at">BCS EK: 2837.62 EUR (Player EK: 2618.81 EUR >> 218.81 EUR
-                                | 8.36%)</p>
-                            <p class="filtered-data__info-at">BCS VK: 3104.00 EUR (Preset: 2865.50 EUR >> 238.5 EUR | 8.32%)</p>
-                            <p>BCS Marge: 266.38 EUR | 9%</p>
-                            <p>BCS: Fern JFK SLM Push / Player: Fern JFK SLM Push</p>
+                            <table class="details">
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        EK
+                                    </td>
+                                    <td class="data__price data__deviation_big">2.493,94 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>Player</td>
+                                    <td>2613.96 EUR (120.02 EUR <span class="data__separator">|</span> 4.59%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        VK
+                                    </td>
+                                    <td class="data__price data__deviation_small">3.004,00 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>Preset</td>
+                                    <td>3002.92 EUR >> 1.08 EUR <span class="data__separator">|</span> 0.04%</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        Marge
+                                    </td>
+                                    <td class="data__price">510.06 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>17%</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        Rule
+                                    </td>
+                                    <td>Beach PMI Top Hotel Sommer</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>Beach PMI Top Hotel Sommer</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="filtered-data__diff">
+                            <p class="filtered-data__info-price">238.5 EUR</p>
+                        </td>
+                    </tr>
+                    <tr class="filtered-data__row">
+                        <td class="filtered-data__number">
+                            3
+                        </td>
+                        <td class="filtered-data__time">
+                            <div class="filtered-data__paragraph">
+                                44762741
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                28.07 10:04
+                                <span class="data__separator">|</span>
+                                <span class="data__deviation_big">40s</span>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <ul class="filtered-data__params">
+                                    <li class="filtered-data__param">
+                                        <span class="filtered-data__key">PlayerBrand</span>
+                                        <span class="filtered-data__value">ABH</span>
+                                    </li>
+                                    <li class="filtered-data__param">
+                                        <span class="filtered-data__key">Brand</span>
+                                        <span class="filtered-data__value">ABHTrue</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Open</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Calc</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">Trace</a>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <a href="/" class="link link_uppercase">More details</a>
+                            </div>
+                        </td>
+                        <td class="filtered-data__route">
+                            <div class="filtered-data__paragraph">
+                                HAM/JFK
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                <p>02.09.2017 12:35</p>
+                                <p>09.09.2017 16:30</p>
+                            </div>
+                            <div class="filtered-data__paragraph">
+                                2/0/0
+                            </div>
+                        </td>
+                        <td class="filtered-data__return">
+                            <table class="details">
+                                <tr class="detail detail_fact data__deviation_small">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-small">SoftConnEx</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>TravelPort</td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">O</td>
+                                    <td colspan="2">205.69 EUR (38.49 EUR <span class="data__separator">|</span> 18.71%)</td>
+                                </tr>
+                                <tr class="detail detail_fact data__deviation_big">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-big">Airbis</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">E</td>
+                                    <td colspan="2">205.69 EUR (81.51 EUR <span class="data__separator">|</span> 39.62%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">ABH</div>
+                                    </td>
+                                    <td>AB 1234/AB 1237</td>
+                                    <td class="data__item_centered">W</td>
+                                    <td class="data__price">167.2 EUR</td>
+                                    <td>WBBRPV</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>TravelPort</td>
+                                    <td>AB 2345</td>
+                                    <td class="data__item_centered">O</td>
+                                    <td colspan="2">205.69 EUR (38.49 EUR <span class="data__separator">|</span> 18.71%)</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="filtered-data__hotel">
+                            <table class="details">
+                                <tr class="detail detail_fact data__deviation_small">
+                                    <td>
+                                        <div class="data__provider data__provider_deviation-small">HTB</div>
+                                    </td>
+                                    <td>PMI04M DB F</td>
+                                    <td class="data__price">2202.56 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td colspan="2">Hilton Sa Torre inkl. Mietwagen</td>
+                                    <td>2202.58 EUR (0.02 EUR <span class="data__separator">|</span> 0%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">Store</div>
+                                    </td>
+                                    <td>Handling</td>
+                                    <td class="data__price">20.00 EUR</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        <div class="data__provider">ICMP</div>
+                                    </td>
+                                    <td>Bus Transfer</td>
+                                    <td class="data__price">&mdash;</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="filtered-data__bcs">
+                            <table class="details">
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        EK
+                                    </td>
+                                    <td class="data__price data__deviation_big">2.493,94 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>Player</td>
+                                    <td>2613.96 EUR (120.02 EUR <span class="data__separator">|</span> 4.59%)</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        VK
+                                    </td>
+                                    <td class="data__price data__deviation_small">3.004,00 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td>Preset</td>
+                                    <td>3002.92 EUR >> 1.08 EUR <span class="data__separator">|</span> 0.04%</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        Marge
+                                    </td>
+                                    <td class="data__price">510.06 EUR</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>17%</td>
+                                </tr>
+                                <tr class="detail detail_fact">
+                                    <td>
+                                        Rule
+                                    </td>
+                                    <td>Beach PMI Top Hotel Sommer</td>
+                                </tr>
+                                <tr class="detail detail_cached">
+                                    <td></td>
+                                    <td>Beach PMI Top Hotel Sommer</td>
+                                </tr>
+                            </table>
                         </td>
                         <td class="filtered-data__diff">
                             <p class="filtered-data__info-price">238.5 EUR</p>
