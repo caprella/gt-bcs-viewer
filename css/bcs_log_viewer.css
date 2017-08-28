@@ -624,6 +624,29 @@ body {
 .filtered-data__diff {
     width: 110px;
 }
+
+@media all and (min-width: 1400px) {
+    .filtered-data__time {
+        max-width: 250px;
+        /*width: 15%;*/
+    }
+    .filtered-data__route {
+        max-width: 200px;
+        width: 10%;
+    }
+    .filtered-data__return {
+        max-width: 300px;
+        width: 25%;
+    }
+    .filtered-data__hotel {
+        width: 25%;
+    }
+    .filtered-data__bcs {
+        width: 1px;
+        white-space: nowrap;
+    }
+}
+
 .filtered-data__paragraph {
     margin-bottom: .75rem;
 }
@@ -665,7 +688,7 @@ body {
 .detail td {
     font-size: 1em;
     line-height: 1.2em;
-    padding: .5em .3em;
+    padding: .5em .25em;
     vertical-align: top;
     border: none;
 }
