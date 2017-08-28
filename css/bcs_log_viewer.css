@@ -70,19 +70,8 @@ body {
     font-weight: bold;
 }
 .data__provider {
-    border-radius: 12px;
-    background-color: #e0e0e0;
-    padding: .3rem .8rem;
-    line-height: normal;
-    display: inline-block;
-}
-.data__provider_deviation-small {
-    background-color: #3E50B4;
-    color: #ffffff;
-}
-.data__provider_deviation-big {
-    background-color: #FF3F80;
-    color: #ffffff;
+    font-size: 1.1em;
+    vertical-align: middle;
 }
 
 /* Filters */
